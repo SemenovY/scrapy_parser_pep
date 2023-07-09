@@ -44,9 +44,7 @@ class PepParsePipeline:
         В процессе переборки item добавляем статусы pep в словарь,
         и считаем их количество.
         """
-        self.count_pep_status[item.get(STATUS)] = self.count_pep_status.get(
-            item.get(STATUS), 0
-        ) + 1
+        self.count_pep_status[item.get(STATUS)] += 1
         return item
 
     def close_spider(self, spider):

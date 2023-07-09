@@ -7,6 +7,7 @@
 файла в колонке «Статус» должно стоять слово Total,
 а в колонке «Количество» — общее количество всех документов.
 """
+import re
 import scrapy
 
 from pep_parse.items import PepParseItem
@@ -27,14 +28,15 @@ class PepSpider(scrapy.Spider):
 
     def parse_pep(self, response):
         """Собирает информацию со страницы PEP."""
-        h1 = response.css('#pep-content > h1::text').get().split()
-        number = h1[1]
-        name = ' '.join(h1[3:])
-        status = response.css('abbr::text').get()
+        content = response.xpath('//*[@id="pep-content"]')
+        pep_content = content.css('h1::text').get()
+        pattern_content = r'PEP (?P<number>\d+) – (?P<name>.*)'
+        h1_text_match = re.search(pattern_content, pep_content)
+
         data = {
-            NUMBER: number,
-            NAME: name,
-            STATUS: status,
+            NUMBER: int(h1_text_match.group('number')),
+            NAME: h1_text_match.group('name'),
+            STATUS: content.css('dl dd abbr::text').get(),
         }
         yield PepParseItem(data)
 
