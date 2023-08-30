@@ -9,8 +9,6 @@
 ________
 # Парсинг документов PEP
 
-![alt text](https://pictures.s3.yandex.net/resources/sprint2_picture1_1672399951.png)
-
 Асинхронный парсер документов PEP на базе фреймворка Scrapy, собирающий данные о
 PEP с сайта `https://www.python.org/`.
 С каждой страницы PEP парсер собирает номер, название, статус и сохраняет
