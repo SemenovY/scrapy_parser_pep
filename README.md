@@ -2,10 +2,16 @@
 
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat&logo=Python&logoColor=ffffff&color=043A6B)](https://www.python.org/)
 [![Scrapy](https://img.shields.io/badge/-Scrapy-464646?style=flat&logo=Scrapy&logoColor=ffffff&color=043A6B)](https://scrapy.org/)
+[![XPath](https://img.shields.io/badge/-XPath-464646?style=flat&logo=XPath&logoColor=ffffff&color=043A6B)](https://www.python.org/)
+[![CSS](https://img.shields.io/badge/-CSS-464646?style=flat&logo=CSS&logoColor=ffffff&color=043A6B)](https://www.python.org/)
+[![Pytest](https://img.shields.io/badge/-Pytest-464646?style=flat&logo=Pytest&logoColor=ffffff&color=043A6B)](https://www.python.org/)
 
-## Парсинг документов PEP
+________
+# Парсинг документов PEP
 
-Парсер документов PEP на базе фреймворка Scrapy, собирающий данные о
+![alt text](https://pictures.s3.yandex.net/resources/sprint2_picture1_1672399951.png)
+
+Асинхронный парсер документов PEP на базе фреймворка Scrapy, собирающий данные о
 PEP с сайта `https://www.python.org/`.
 С каждой страницы PEP парсер собирает номер, название, статус и сохраняет
 два файла в формате `.csv` в папке `results/...`.
@@ -34,12 +40,12 @@ PEP с сайта `https://www.python.org/`.
 * CSS - Cascading Style Sheets, каскадные таблицы стилей.
 * Pytest — среда тестирования, основанная на Python. 
 
-## Как запустить проект:
+## Инструкция по развёртыванию проекта
 
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/SemenovY/scrapy_parser_pep
+git clone git@github.com:SemenovY/scrapy_parser_pep
 ```
 
 Создать и активировать виртуальное окружение:
@@ -64,4 +70,14 @@ pip install -r requirements.txt
 scrapy crawl pep
 ```
 
-Автор: [SemenovY](https://github.com/SemenovY)
+### Зависимости:
+
+* Python 3.9
+* Scrapy
+
+_____________
+***Над проектом работал:***
+* Семёнов Юрий | GitHub: [SemenovY](https://github.com/SemenovY)| Python developer.
+
+### *Free Software, Not for commercial use!*
+### =^..^=______/
