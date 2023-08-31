@@ -5,7 +5,9 @@
 [![XPath](https://img.shields.io/badge/-XPath-464646?style=flat&logo=XPath&logoColor=ffffff&color=043A6B)](https://www.python.org/)
 [![CSS](https://img.shields.io/badge/-CSS-464646?style=flat&logo=CSS&logoColor=ffffff&color=043A6B)](https://www.python.org/)
 [![Pytest](https://img.shields.io/badge/-Pytest-464646?style=flat&logo=Pytest&logoColor=ffffff&color=043A6B)](https://www.python.org/)
-
+.. image:: https://img.shields.io/pypi/pyversions/Scrapy.svg
+   :target: https://pypi.python.org/pypi/Scrapy
+   :alt: Supported Python Versions
 ________
 # Парсинг документов PEP
 
