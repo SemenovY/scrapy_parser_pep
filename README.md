@@ -75,7 +75,7 @@ scrapy crawl pep
 
 _____________
 ***Над проектом работал:***
-* Семёнов Юрий | GitHub: [SemenovY](https://github.com/SemenovY)| Python developer.
+* Семёнов Юрий | GitHub: [SemenovY](https://github.com/SemenovY) | Python developer.
 
 ### *Free Software, Not for commercial use!*
 ### =^..^=______/
